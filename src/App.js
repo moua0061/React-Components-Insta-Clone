@@ -12,6 +12,7 @@ import Posts from './components/Posts/Posts';
 import dummyData from './dummy-data';
 import SearchBar from './components/SearchBar/SearchBar';
 import './App.css';
+import LikeSection from './components/Posts/LikeSection';
 
 const App = () => {
   // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
@@ -44,6 +45,7 @@ const App = () => {
       <SearchBar />
       <Posts likePost={likePost} posts={posts} />
       {/* Check the implementation of each component, to see what props they require, if any! */}
+      <LikeSection likePost={likePost} />
     </div>
   );
 };
